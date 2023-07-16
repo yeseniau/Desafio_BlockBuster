@@ -1,0 +1,15 @@
+<h1>Editing movie</h1>
+
+<%= render "form", movie: @movie %>
+
+<br>
+
+<div>
+  <%= link_to "Show this movie", @movie %> |
+  <%= link_to "Back to movies", movies_path %>
+</div>
+<br>
+<div>
+    <%= form.label :client_id, style: "display: block" %>
+    <%= form.select :client_id, options_for_select(@clients) %>
+  </div>
