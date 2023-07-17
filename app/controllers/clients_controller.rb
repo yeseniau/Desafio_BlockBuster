@@ -20,7 +20,6 @@ class ClientsController < ApplicationController
   # GET /clients/1/edit
   def edit
     @movies = Movie.all
-
   end
 
   # POST /clients or /clients.json

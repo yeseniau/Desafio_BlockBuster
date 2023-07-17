@@ -12,22 +12,23 @@
   <% end %>
 
   <div>
-    <%= form.label :name, style: "display: block" %>
+    <%= form.label :Nombre, style: "display: block" %>
     <%= form.text_field :name %>
   </div>
 
   <div>
-    <%= form.label :age, style: "display: block" %>
+    <%= form.label :Edad, style: "display: block" %>
     <%= form.text_field :age %>
   </div>
 <br>
 
   <div>
-    <%= form.label :movies_id, style: "display: block" %>
+    <%= form.label :Pelicula, style: "display: block" %>
     <%= form.collection_select :movie_id, @movies, :id, :name, { include_blank: 'Elige una película' } %>
   </div>
 
+  <br>
   <div>
-    <%= form.submit %>
+    <%= form.submit class: "btn" %>
   </div>
 <% end %>

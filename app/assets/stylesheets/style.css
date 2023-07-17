@@ -1,7 +1,11 @@
 h1{
-    color: brown;
+    color: #FFB500;
 }
 
 body{
     background-color: #005CBF;
+}
+
+.btn{
+    background-color: #FFB500;
 }

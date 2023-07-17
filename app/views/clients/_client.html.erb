@@ -4,8 +4,8 @@
     <td><%= client.name %></td>
     <td><%= client.age %></td>
     <td><%= client.movie.name%></td>
-    <td><%= link_to "Show this client", client %></td>
-    <td><%= link_to "Edit this client", edit_client_path(client) %></td>
-    <td><%= button_to "Destroy this client", client, method: :delete %></td>
+    <td><%= link_to "Mostrar", client %></td>
+    <td><%= link_to "Editar", edit_client_path(client) %></td>
+    <td><%= button_to "Eliminar", client, method: :delete, class: "btn" %></td>
   </tr>
 </div>
